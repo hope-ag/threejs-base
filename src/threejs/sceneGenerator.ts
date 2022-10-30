@@ -14,8 +14,6 @@ import {
 import vertexShader from './shaders/vertex.glsl'
 import fragmentShader from './shaders/fragment.glsl'
 
-import typescriptLogo from '../typescript.svg'
-
 import { isClient } from '@/utils/browser';
 import { tick, sizes } from './threeUtils';
 
@@ -42,7 +40,7 @@ const textureLoader = new TextureLoader(manager);
 export function configureScene(element: HTMLElement) {
   console.log('STARTED')
 
-  textureLoader.load(typescriptLogo)
+  textureLoader.load('/typescript.svg')
   
     
   if (scene) scene = null
@@ -137,7 +135,7 @@ function render(element: HTMLElement) {
 
   if (!renderer) renderer = new WebGLRenderer({
     canvas: canvas,
-    alpha: true,
+    // alpha: true,
     antialias: true
   });
 
