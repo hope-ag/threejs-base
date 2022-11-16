@@ -84,7 +84,7 @@ function render(element: HTMLElement) {
     u_time: { type: "f", value: 1.0 },
     u_resolution: { type: "v2", value: new Vector2(screen.width, screen.height) },
     u_mouse: { type: "v2", value: new Vector2(cursor.x, cursor.y) }
-};
+  };
   
 
   // Geometries
