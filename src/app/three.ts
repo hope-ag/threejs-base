@@ -58,8 +58,7 @@ export default class Three {
     });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setSize(this.width, this.height);
-    this.renderer.setClearColor(0xee_ee_ee, 1);
-
+    this.renderer.setClearColor(0xffffff, 0); // alpla
     this.container.append(this.renderer.domElement);
 
     this.camera = new PerspectiveCamera(70, this.width / this.height, 0.01, 1000);
