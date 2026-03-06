@@ -82,7 +82,6 @@ export default class Three {
     await this.renderer.init();
     this.setLights();
     this.addObjects();
-    this.handleResize();
     this.render();
     this.setupResizeHandler();
     this.setUpSettings();
@@ -116,6 +115,7 @@ export default class Three {
   }
 
   private setupResizeHandler() {
+    this.handleResize();
     window.addEventListener('resize', () => {
       this.handleResize();
     });
