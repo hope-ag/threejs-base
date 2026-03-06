@@ -137,11 +137,13 @@ export default class Three {
   }
 
   play() {
+    if (this.isPlaying) return;
     this.isPlaying = true;
     this.render();
   }
 
   pause() {
+    if (!this.isPlaying) return;
     this.isPlaying = false;
     this.renderer.setAnimationLoop(null);
   }
