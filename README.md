@@ -13,7 +13,7 @@ A minimal Three.js starter template using **WebGPU**, **TSL (Three Shading Langu
 
 ## Demo
 
-<video src="docs/demo.mp4" autoplay loop muted playsinline></video>
+![demo](docs/demo.gif)
 
 ## Features
 
