@@ -12,6 +12,7 @@ import {
   MeshBasicNodeMaterial,
   PerspectiveCamera,
   PlaneGeometry,
+  // RenderPipeline,
   Scene,
   WebGPURenderer
 } from 'three/webgpu';
